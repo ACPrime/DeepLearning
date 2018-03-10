@@ -40,25 +40,25 @@ The City Council tells you the following that they want an algorithm that
 
 If you had the three following models, which one would you choose?
 
-- [ ]
+- [ ] 
 
 Test Accuracy | Runtime | Memory size
 ----- | ----- | -----
 97% | 1 sec | 3MB
 
-- [ ]
+- [ ] 
 
 Test Accuracy | Runtime | Memory size
 ----- | ----- | -----
 99% | 13 sec | 9MB
 
-- [ ]
+- [ ] 
 
 Test Accuracy | Runtime | Memory size
 ----- | ----- | -----
 97% | 3 sec | 2MB
 
-- [x]
+- [x] 
 
 Test Accuracy | Runtime | Memory size
 ----- | ----- | -----
@@ -66,11 +66,11 @@ Test Accuracy | Runtime | Memory size
 
 ## 3. Based on the city’s requests, which of the following would you say is true?
 
-- [x]Accuracy is an optimizing metric; running time and memory size are a satisficing metrics.
+- [x] Accuracy is an optimizing metric; running time and memory size are a satisficing metrics.
 
-- [ ]Accuracy is a satisficing metric; running time and memory size are an optimizing metric.
+- [ ] Accuracy is a satisficing metric; running time and memory size are an optimizing metric.
 
-- [ ]Accuracy, running time and memory size are all optimizing metrics because you want to do well on all three.
+- [ ] Accuracy, running time and memory size are all optimizing metrics because you want to do well on all three.
 
-- [ ]Accuracy, running time and memory size are all satisficing metrics because you have to do sufficiently well on all three for your system to be acceptable.
+- [ ] Accuracy, running time and memory size are all satisficing metrics because you have to do sufficiently well on all three for your system to be acceptable.
 
