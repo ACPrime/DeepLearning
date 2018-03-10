@@ -30,8 +30,8 @@ The City Council tells you the following that they want an algorithm that
 
 **Note**: Having three evaluation metrics makes it harder for you to quickly choose between two different algorithms, and will slow down the speed with which your team can iterate. True/False?
 
-- [ ] True
-- [x] False
+- [x] True
+- [ ] False
 
 ## 2. Question 2
 After further discussions, the city narrows down its criteria to:
@@ -107,9 +107,10 @@ Train | Dev | Test
 ----- | ----- | -----
 6,000,000 | 1,000,000 | 3,000,000
 
+## 5. Question 5
+
 After setting up your train/dev/test sets, the City Council comes across another 1,000,000 images, called the “citizens’ data”. Apparently the citizens of Peacetopia are so scared of birds that they volunteered to take pictures of the sky and label them, thus contributing these additional 1,000,000 images. These images are different from the distribution of images the City Council had originally given you, but you think it could help your algorithm.
 
-## 5. Question 5
 You should not add the citizens’ data to the training set, because this will cause the training and dev/test set distributions to become different, thus hurting dev and test set performance. True/False?
 
 - [ ] True
@@ -120,11 +121,11 @@ One member of the City Council knows a little about machine learning, and thinks
 
 - [x] This would cause the dev and test set distributions to become different. This is a bad idea because you’re not aiming where you want to hit.
 
-- [x] The 1,000,000 citizens’ data images do not have a consistent x-->y mapping as the rest of the data (similar to the New York City/Detroit housing prices example from lecture).
+- [ ] The 1,000,000 citizens’ data images do not have a consistent x-->y mapping as the rest of the data (similar to the New York City/Detroit housing prices example from lecture).
 
 - [ ] A bigger test set will slow down the speed of iterating because of the computational expense of evaluating models on the test set.
 
-- [ ] The test set no longer reflects the distribution of data (security cameras) you most care about.
+- [x] The test set no longer reflects the distribution of data (security cameras) you most care about.
 
 ## 7. Question 7
 You train a system, and its errors are as follows (error = 100%-Accuracy):
@@ -187,11 +188,11 @@ Dev set error | 2.1%
 
 Based on the evidence you have, which two of the following four options seem the most promising to try? (Check two options.)
 
-- [x] Try increasing regularization.
+- [ ] Try increasing regularization.
 
 - [ ] Get a bigger training set to reduce variance.
 
-- [ ] Try decreasing regularization.
+- [x] Try decreasing regularization.
 
 - [x] Train a bigger model to try to do better on the training set.
 
@@ -221,6 +222,7 @@ Human-level performance | 0.10%
 ---|---
 Training set error | 0.05%
 Dev set error | 0.05%
+
 What can you conclude? (Check all that apply.)
 
 - [x] It is now harder to measure avoidable bias, thus progress will be slower going forward.
@@ -249,13 +251,13 @@ You’ve handily beaten your competitor, and your system is now deployed in Peac
 
 You have only 1,000 images of the new species of bird. The city expects a better system from you within the next 3 months. Which of these should you do first?
 
-- [ ] Use the data you have to define a new evaluation metric (using a new dev/test set) taking into account the new species, and use that to drive further progress for your team.
+- [x] Use the data you have to define a new evaluation metric (using a new dev/test set) taking into account the new species, and use that to drive further progress for your team.
 
 - [ ] Put the 1,000 images into the training set so as to try to do better on these birds.
 
 - [ ] Try data augmentation/data synthesis to get more images of the new type of bird.
 
-- [x] Add the 1,000 images into your dataset and reshuffle into a new train/dev/test split.
+- [ ] Add the 1,000 images into your dataset and reshuffle into a new train/dev/test split.
 
 ## 15. Question 15
 The City Council thinks that having more Cats in the city would help scare off birds. They are so happy with your work on the Bird detector that they also hire you to build a Cat detector. (Wow Cat detectors are just incredibly useful aren’t they.) Because of years of working on Cat detectors, you have such a huge dataset of 100,000,000 cat images that training on this data takes about two weeks. Which of the statements do you agree with? (Check all that agree.)
@@ -264,6 +266,6 @@ The City Council thinks that having more Cats in the city would help scare off b
 
 - [x] Buying faster computers could speed up your teams’ iteration speed and thus your team’s productivity.
 
-- [ ] If 100,000,000 examples is enough to build a good enough Cat detector, you might be better of training with just 10,000,000 examples to gain a ≈10x improvement in how quickly you can run experiments, even if each model performs a bit worse because it’s trained on less data.
+- [x] If 100,000,000 examples is enough to build a good enough Cat detector, you might be better of training with just 10,000,000 examples to gain a ≈10x improvement in how quickly you can run experiments, even if each model performs a bit worse because it’s trained on less data.
 
 - [ ] Having built a good Bird detector, you should be able to take the same model and hyperparameters and just apply it to the Cat dataset, so there is no need to iterate.
