@@ -185,3 +185,20 @@ Based on the evidence you have, which two of the following four options seem the
 
 - [x] Train a bigger model to try to do better on the training set.
 
+## 11. You also evaluate your model on the test set, and find the following:
+ | 
+----|----
+Human-level performance | 0.1%
+Training set error | 2.0%
+Dev set error | 2.1%
+Test set error | 7.0%
+
+What does this mean? (Check the two best options.)
+
+- [ ] You have underfit to the dev set.
+
+- [ ] You should try to get a bigger dev set.
+
+- [ ] You should get a bigger test set.
+
+- [ ] You have overfit to the dev set.
