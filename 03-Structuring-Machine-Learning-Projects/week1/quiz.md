@@ -29,5 +29,29 @@ The City Council tells you the following that they want an algorithm that
 
 **Note**: Having three evaluation metrics makes it harder for you to quickly choose between two different algorithms, and will slow down the speed with which your team can iterate. True/False?
 
-- [x] True
+- [ ] True
 - [ ] False
+
+## 2. After further discussions, the city narrows down its criteria to:
+
+- "We need an algorithm that can let us know a bird is flying over Peacetopia as accurately as possible."
+- "We want the trained model to take no more than 10sec to classify a new image.”
+- “We want the model to fit in 10MB of memory.”
+
+If you had the three following models, which one would you choose?
+
+- [ ] Test Accuracy | Runtime | Memory size
+----- | ----- | -----
+97% | 1 sec | 3MB
+
+- [ ] Test Accuracy | Runtime | Memory size
+----- | ----- | -----
+99% | 13 sec | 9MB
+
+- [ ] Test Accuracy | Runtime | Memory size
+----- | ----- | -----
+97% | 3 sec | 2MB
+
+- [ ] Test Accuracy | Runtime | Memory size
+----- | ----- | -----
+98% | 9 sec | 9MB
