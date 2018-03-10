@@ -1,4 +1,4 @@
-# utonomous driving (case study)
+# Autonomous driving (case study)
 
 ## 1. Question 1
 
@@ -70,10 +70,10 @@ Dataset: | Contains: | Error of the algorithm:
 --- | --- | ---
 Training | 940,000 images randomly picked from (900,000 internet images + 60,000 car’s front-facing camera images) | 8.8%
 Training-Dev | 20,000 images randomly picked from (900,000 internet images + 60,000 car’s front-facing camera images) | 9.1%
-Dev	20,000 images from your car’s front-facing camera | 14.3%
+Dev | 20,000 images from your car’s front-facing camera | 14.3%
 Test | 20,000 images from the car’s front-facing camera | 14.8%
 
-- [ ] You also know that human-level error on the road sign and traffic signals classification task is around 0.5%. Which of the following are True? (Check all that apply).
+You also know that human-level error on the road sign and traffic signals classification task is around 0.5%. Which of the following are True? (Check all that apply).
 
 - [ ] You have a large data-mismatch problem because your model does a lot better on the training-dev set than on the dev set
 
