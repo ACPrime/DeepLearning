@@ -40,7 +40,7 @@ The City Council tells you the following that they want an algorithm that
 
 If you had the three following models, which one would you choose?
 
-- [ ] Test Accuracy | Runtime | Memory size
+Test Accuracy | Runtime | Memory size
 ----- | ----- | -----
 97% | 1 sec | 3MB
 
