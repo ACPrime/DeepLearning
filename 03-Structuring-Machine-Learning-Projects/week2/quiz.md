@@ -12,22 +12,26 @@ Your 100,000 labeled images are taken using the front-facing camera of your car.
 
 You are just getting started on this project. What is the first thing you do? Assume each of the steps below would take about an equal amount of time (a few days).
 
-- [ ] Spend a few days training a basic model and see what mistakes it makes.
+- [x] Spend a few days training a basic model and see what mistakes it makes.
 
-- [x] Spend a few days getting the internet data, so that you understand better what data is available.
+- [ ] Spend a few days getting the internet data, so that you understand better what data is available.
 
 - [ ] Spend a few days collecting more data using the front-facing camera of your car, to better understand how much data per unit time you can collect.
 
-- [x] Spend a few days checking what is human-level performance for these tasks so that you can get an accurate estimate of Bayes error.
+- [ ] Spend a few days checking what is human-level performance for these tasks so that you can get an accurate estimate of Bayes error.
+
+> As discussed in lecture, applied ML is a highly iterative process. If you train a basic model and carry out error analysis (see what mistakes it makes) it will help point you in more promising directions.
 
 ## 2. Question 2
 Your goal is to detect road signs (stop sign, pedestrian crossing sign, construction ahead sign) and traffic signals (red and green lights) in images. The goal is to recognize which of these objects appear in each image. You plan to use a deep neural network with ReLU units in the hidden layers.
 
 For the output layer, a softmax activation would be a good choice for the output layer because this is a multi-task learning problem. True/False?
 
-- [x] True
+- [ ] True
 
-- [ ] False
+- [x] False
+
+> Softmax would be a good choice if one and only one of the possibilities (stop sign, speed bump, pedestrian crossing, green light and red light) was present in each image.
 
 ## 3. Question 3
 You are carrying out error analysis and counting up what errors the algorithm makes. Which of these datasets do you think you should manually go through and carefully examine, one image at a time?
@@ -52,6 +56,8 @@ Because this is a multi-task learning problem, you need to have all your ![](htt
 
 - [x] False
 
+> As seen in the lecture on multi-task learning, you can compute the cost such that it is not influenced by the fact that some entries haven’t been labeled.
+
 ## 5. Question 5
 The distribution of data you care about contains images from your car’s front-facing camera; which comes from a different distribution than the images you were able to find and download off the internet. How should you split the dataset into train/dev/test sets?
 
@@ -62,6 +68,8 @@ The distribution of data you care about contains images from your car’s front-
 - [ ] Choose the training set to be the 900,000 images from the internet along with 20,000 images from your car’s front-facing camera. The 80,000 remaining images will be split equally in dev and test sets.
 
 - [ ] Mix all the 100,000 images with the 900,000 images you found online. Shuffle everything. Split the 1,000,000 images dataset into 980,000 for the training set, 10,000 for the dev set and 10,000 for the test set.
+
+> As seen in lecture, it is important that your dev and test set have the closest possible distribution to “real”-data. It is also important for the training set to contain enough “real”-data to avoid having a data-mismatch problem.
 
 ## 6. Question 6
 Assume you’ve finally chosen the following split between of the data:
@@ -77,7 +85,7 @@ You also know that human-level error on the road sign and traffic signals classi
 
 - [x] You have a large data-mismatch problem because your model does a lot better on the training-dev set than on the dev set
 
-- [x] You have a large variance problem because your model is not generalizing well to data from the same training distribution but that it has never seen before.
+- [ ] *You have a large variance problem because your model is not generalizing well to data from the same training distribution but that it has never seen before.*
 
 - [ ] Your algorithm overfits the dev set because the error of the dev and test sets are very close.
 
@@ -92,7 +100,9 @@ Based on table from the previous question, a friend thinks that the training dat
 
 - [ ] Your friend is wrong. (I.e., Bayes error for the training data distribution is probably higher than for the dev/test distribution.)
 
-- [ ] There’s insufficient information to tell if your friend is right or wrong.
+- [x] There’s insufficient information to tell if your friend is right or wrong.
+
+> The algorithm does better on the distribution of data it trained on. But you don’t know if it’s because it trained on that no distribution or if it really is *easier*. To get a better sense, measure human-level error separately on both distributions.
 
 ## 8. Question 8
 You decide to focus on the dev set and check by hand what are the errors due to. Here is a table summarizing your discoveries:
@@ -108,13 +118,15 @@ In this table, 4.1%, 8.0%, etc.are a fraction of the total dev set (not just exa
 
 The results from this analysis implies that the team’s highest priority should be to bring more foggy pictures into the training set so as to address the 8.0% of errors in that category. True/False?
 
-- [x] True because it is the largest category of errors. As discussed in lecture, we should prioritize the largest category of error to avoid wasting the team’s time.
+- [ ] True because it is the largest category of errors. As discussed in lecture, we should prioritize the largest category of error to avoid wasting the team’s time.
 
 - [ ] True because it is greater than the other error categories added together (8.0 > 4.1+2.2+1.0).
 
 - [ ] False because this would depend on how easy it is to add this data and how much you think your team thinks it’ll help.
 
-- [ ] False because data augmentation (synthesizing foggy images by clean/non-foggy images) is more efficient.
+- [x] False because data augmentation (synthesizing foggy images by clean/non-foggy images) is more efficient.
+
+> OK....
 
 ## 9. Question 9
 
@@ -127,6 +139,8 @@ You can buy a specially designed windshield wiper that help wipe off some of the
 - [ ] 2.2% would be a reasonable estimate of how much this windshield wiper will improve performance.
 
 - [ ] 2.2% would be a reasonable estimate of how much this windshield wiper could worsen performance in the worst case.
+
+> You will probably not improve performance by more than 2.2% by solving the raindrops problem. If your dataset was infinitely big, 2.2% would be a perfect estimate of the improvement you can achieve by purchasing a specially designed windshield wiper that removes the raindrops.
 
 ## 10. Question 10
 
@@ -142,6 +156,8 @@ Which of the following statements do you agree with?
 
 - [ ] There is little risk of overfitting to the 1,000 pictures of fog so long as you are combing it with a much larger (>>1,000) of clean/non-foggy images.
 
+> If the synthesized images look realistic, then the model will just see them as if you had added useful data to identify road signs and traffic signals in a foggy weather. I will very likely help.
+
 ## 11. Question 11
 
 After working further on the problem, you’ve decided to correct the incorrectly labeled data on the dev set. Which of these statements do you agree with? (Check all that apply).
@@ -154,30 +170,38 @@ After working further on the problem, you’ve decided to correct the incorrectl
 
 - [ ] You should not correct incorrectly labeled data in the training set as it does not worth the time.
 
+> Deep learning algorithms are quite robust to having slightly different train and dev distributions.
+
+> Because you want to make sure that your dev and test data come from the same distribution for your algorithm to make your team’s iterative development process is efficient.
+
 ## 12. Question 12
 
 So far your algorithm only recognizes red and green traffic lights. One of your colleagues in the startup is starting to work on recognizing a yellow traffic light. (Some countries call it an orange light rather than a yellow light; we’ll use the US convention of calling it yellow.) Images containing yellow lights are quite rare, and she doesn’t have enough data to build a good model. She hopes you can help her out using transfer learning.
 
 What do you tell your colleague?
 
-- [ ] She should try using weights pre-trained on your dataset, and fine-tuning further with the yellow-light dataset.
+- [x] She should try using weights pre-trained on your dataset, and fine-tuning further with the yellow-light dataset.
 
-- [x] If she has (say) 10,000 images of yellow lights, randomly sample 10,000 images from your dataset and put your and her data together. This prevents your dataset from “swamping” the yellow lights dataset.
+- [ ] *If she has (say) 10,000 images of yellow lights, randomly sample 10,000 images from your dataset and put your and her data together. This prevents your dataset from “swamping” the yellow lights dataset.*
 
 - [ ] You cannot help her because the distribution of data you have is different from hers, and is also lacking the yellow label.
 
 - [ ] Recommend that she try multi-task learning instead of transfer learning using all the data.
 
+> You have trained your model on a huge dataset, and she has a small dataset. Although your labels are different, the parameters of your model have been trained to recognize many characteristics of road and traffic images which will be useful for her problem. This is a perfect case for transfer learning, she can start with a model with the same architecture as yours, change what is after the last hidden layer and initialize it with your trained parameters.
+
 ## 13. Question 13
 Another colleague wants to use microphones placed outside the car to better hear if there’re other vehicles around you. For example, if there is a police vehicle behind you, you would be able to hear their siren. However, they don’t have much to train this audio system. How can you help?
 
-- [x] Transfer learning from your vision dataset could help your colleague get going faster. Multi-task learning seems significantly less promising.
+- [ ] Transfer learning from your vision dataset could help your colleague get going faster. Multi-task learning seems significantly less promising.
 
 - [ ] Multi-task learning from your vision dataset could help your colleague get going faster. Transfer learning seems significantly less promising.
 
 - [ ] Either transfer learning or multi-task learning could help our colleague get going faster.
 
-- [ ] Neither transfer learning nor multi-task learning seems promising.
+- [x] Neither transfer learning nor multi-task learning seems promising.
+
+> The problem he is trying to solve is quite different from yours. The different dataset structures make it probably impossible to use transfer learning or multi-task learning.
 
 ## 14. Question 14
 To recognize red and green lights, you have been using this approach:
@@ -194,6 +218,8 @@ Between these two, Approach B is more of an end-to-end approach because it has d
 
 - [x] False
 
+> (A) is an end-to-end approach as it maps directly the input (x) to the output (y).
+
 ## 15. Question 15
 
 Approach A (in the question above) tends to be more promising than approach B if you have a ________ (fill in the blank).
@@ -205,3 +231,5 @@ Approach A (in the question above) tends to be more promising than approach B if
 - [ ] Large bias problem.
 
 - [ ] Problem with a high Bayes error.
+
+> In many fields, it has been observed that end-to-end learning works better in practice, but requires a large amount of data.
