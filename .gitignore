@@ -1,8 +1,4 @@
-*.pptx
 .ipynb_checkpoints
-
-.ipynb_checkpoints
-*.ppt
 *.zip
 AI-ML
 .idea/workspace.xml
