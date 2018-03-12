@@ -17,7 +17,7 @@ This repo contains all my work for this specialization. All the code base, quiz 
 ## Courses
 ### [Course 1: Neural Networks and Deep Learning](https://github.com/ACPrime/DeepLearning/tree/master/01-Neural-Networks-and-Deep-Learning/)
   - [Week 1 - Introduction to deep learning
-](https://github.com/ACPrime/DeepLearning/tree/master/01-Neural-Networks-and-Deep-Learning/week1/week1)
+](https://github.com/ACPrime/DeepLearning/tree/master/01-Neural-Networks-and-Deep-Learning/week1)
     - [Quiz](https://github.com/ACPrime/DeepLearning/tree/master/01-Neural-Networks-and-Deep-Learning/week1/quiz.md)
   - [Week 2 - Neural Networks Basics](https://github.com/ACPrime/DeepLearning/tree/master/01-Neural-Networks-and-Deep-Learning/week2)
     - [Quiz](https://github.com/andersy005/deep-learning-specialization-coursera/blob/master/01-Neural-Networks-and-Deep-Learning/week2/quiz.pdf)

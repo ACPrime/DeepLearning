@@ -9,8 +9,8 @@ What does the analogy “AI is the new electricity” refer to?
 
 - [x] Similar to electricity starting about 100 years ago, AI is transforming multiple industries.
 
-> Yes. AI is transforming many 􀃒elds from the car industry to agriculture to
-supply-chain...
+> Yes. AI is transforming many fields from the car industry to agriculture to
+supply-chain.
 
 - [ ] Through the “smart grid”, AI is delivering a new wave of electricity.
 
@@ -24,7 +24,7 @@ Which of these are reasons for Deep Learning recently taking off? (Check the thr
 - [x] We have access to a lot more computational power.
 
 > Yes! The development of hardware, perhaps especially GPU computing, has
-signi􀃒cantly improved deep learning algorithms' performance.
+significantly improved deep learning algorithms' performance.
 
 - [x] Deep learning has resulted in significant improvements in important applications such as online advertising, speech recognition, and image recognition.
 
@@ -72,11 +72,11 @@ Which one of these plots represents a ReLU activation function?
 - [x] Figure 2:
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/fwrRT3GkEee1BBJ2zgI9PA_c3a9e3d21c9e6cad5bb938ba596f94e3_Figure-2.png?expiry=1520899200000&hmac=9cAUt-N3sCDBD6J3zsrqJjG0lcc6OKTlujz9UG8vC2o)
 
-- [ ] Figure 3:
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/sBkbVnGkEee1BBJ2zgI9PA_2e3410579d847b4df4c2cf2691d63d3e_figure3.png?expiry=1520899200000&hmac=Jo0Ld1dG9nV2IB3V4Oty1cDaMb1FGZw89Gs_PuiCRGI)
-
 > Correct! This is the ReLU activation function, the most used in neural
 networks.
+
+- [ ] Figure 3:
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/sBkbVnGkEee1BBJ2zgI9PA_2e3410579d847b4df4c2cf2691d63d3e_figure3.png?expiry=1520899200000&hmac=Jo0Ld1dG9nV2IB3V4Oty1cDaMb1FGZw89Gs_PuiCRGI)
 
 - [x] Figure 4:
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/0GhwpHGkEeewexKhHrUb5g_2e64af1a0d0520a05f4b366bd77328ff_figure4.png?expiry=1520899200000&hmac=Xg0A2lTicabQRwK8qIcasMFTDQWMNqgbMkvUjyr2DD0)
