@@ -7,11 +7,13 @@ What do you think applying this filter to a grayscale image will do?
 
 - [x] Detect 45 degree edges
 
-- [ ] Detect vertical edges
+- [x] Detect vertical edges
 
 - [ ] Detect horizontal edges
 
 - [ ] Detect image contrast
+
+> Because the left part is positive, and the right part is negative.
 
 ## 2. Question 2
 Suppose your input is a 300 by 300 color (RGB) image, and you are **not** using a convolutional network. If the first hidden layer has 100 neurons, each one fully connected to the input, how many parameters does this hidden layer have (including the bias parameters)?
@@ -38,14 +40,14 @@ Suppose your input is a 300 by 300 color (RGB) image, and you use a convolutiona
 ## 4. Question 4
 You have an input volume that is 63x63x16, and convolve it with 32 filters that are each 7x7, using a stride of 2 and no padding. What is the output volume?
 
-- [ ] 29x29x32
+- [x] 29x29x32
 
 - [ ] 16x16x32
 
-- [x] 29x29x16
+- [ ] 29x29x16
 
 - [ ] 16x16x16
-
+> n = 63, f = 7, s = 2, p = 0, 32 filters.
 ## 5. Question 5
 You have an input volume that is 15x15x8, and pad it using “pad=2.” What is the dimension of the resulting volume (after padding)?
 
@@ -85,6 +87,8 @@ Because pooling layers do not have parameters, they do not affect the backpropag
 - [x] True
 
 - [ ] False
+
+> Go to [this page](https://www.slideshare.net/kuwajima/cnnbp) for furthe information.
 
 ## 9. Question 9
 In lecture we talked about “parameter sharing” as a benefit of using convolutional networks. Which of the following statements about parameter sharing in ConvNets are true? (**Check all that apply.**)
