@@ -8,8 +8,8 @@ After 3 weeks, you will:
 - Understand new best-practices for the deep learning era of how to set up train/dev/test sets and analyze bias/variance
 - Be able to implement a neural network in TensorFlow. 
 
-This is the second course of the Deep Learning Specialization.
-You can choose to take this course only. Learn more.
+This is the second course of the [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning).
+You can choose to take this course only. [Learn more](https://www.coursera.org/learn/deep-neural-network).
 
 ## WEEK 1 Practical aspects of Deep Learning
 - 	Video · Train / Dev / Test sets
