@@ -5,7 +5,7 @@ What do you think applying this filter to a grayscale image will do?
 
 ![](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bbmatrix%7D%200%26%201%20%26%20-1%20%26%200%5C%5C%201%26%203%20%26%20-3%20%26%20-1%5C%5C%201%26%203%20%26%20-3%20%26%20-1%5C%5C%200%26%201%20%26%20-1%20%26%200%20%5Cend%7Bbmatrix%7D)
 
-- [ ] Detect 45 degree edges
+- [x] Detect 45 degree edges
 
 - [ ] Detect vertical edges
 
@@ -14,7 +14,7 @@ What do you think applying this filter to a grayscale image will do?
 - [ ] Detect image contrast
 
 ## 2. Question 2
-Suppose your input is a 300 by 300 color (RGB) image, and you are not using a convolutional network. If the first hidden layer has 100 neurons, each one fully connected to the input, how many parameters does this hidden layer have (including the bias parameters)?
+Suppose your input is a 300 by 300 color (RGB) image, and you are **not** using a convolutional network. If the first hidden layer has 100 neurons, each one fully connected to the input, how many parameters does this hidden layer have (including the bias parameters)?
 
 - [ ] 9,000,001
 
@@ -22,7 +22,7 @@ Suppose your input is a 300 by 300 color (RGB) image, and you are not using a co
 
 - [ ] 27,000,001
 
-- [ ] 27,000,100
+- [x] 27,000,100
 
 ## 3. Question 3
 Suppose your input is a 300 by 300 color (RGB) image, and you use a convolutional layer with 100 filters that are each 5x5. How many parameters does this hidden layer have (including the bias parameters)?
@@ -33,7 +33,7 @@ Suppose your input is a 300 by 300 color (RGB) image, and you use a convolutiona
 
 - [ ] 7500
 
-- [ ] 7600
+- [x] 7600
 
 ## 4. Question 4
 You have an input volume that is 63x63x16, and convolve it with 32 filters that are each 7x7, using a stride of 2 and no padding. What is the output volume?
@@ -42,7 +42,7 @@ You have an input volume that is 63x63x16, and convolve it with 32 filters that 
 
 - [ ] 16x16x32
 
-- [ ] 29x29x16
+- [x] 29x29x16
 
 - [ ] 16x16x16
 
@@ -51,7 +51,7 @@ You have an input volume that is 15x15x8, and pad it using “pad=2.” What is 
 
 - [ ] 17x17x10
 
-- [ ] 19x19x8
+- [x] 19x19x8
 
 - [ ] 19x19x12
 
@@ -64,7 +64,7 @@ You have an input volume that is 63x63x16, and convolve it with 32 filters that 
 
 - [ ] 2
 
-- [ ] 3
+- [x] 3
 
 - [ ] 7
 
@@ -75,14 +75,14 @@ You have an input volume that is 32x32x16, and apply max pooling with a stride o
 
 - [ ] 16x16x8
 
-- [ ] 16x16x16
+- [x] 16x16x16
 
 - [ ] 32x32x8
 
 ## 8. Question 8
 Because pooling layers do not have parameters, they do not affect the backpropagation (derivatives) calculation.
 
-- [ ] True
+- [x] True
 
 - [ ] False
 
@@ -91,11 +91,11 @@ In lecture we talked about “parameter sharing” as a benefit of using convolu
 
 - [ ] It reduces the total number of parameters, thus reducing overfitting.
 
-- [ ] It allows a feature detector to be used in multiple locations throughout the whole input image/input volume.
+- [x] It allows a feature detector to be used in multiple locations throughout the whole input image/input volume.
 
 - [ ] It allows parameters learned for one task to be shared even for a different task (transfer learning).
 
-- [ ] It allows gradient descent to set many of the parameters to zero, thus making the connections sparse.
+- [x] It allows gradient descent to set many of the parameters to zero, thus making the connections sparse.
 
 ## 10. Question 10
 In lecture we talked about “sparsity of connections” as a benefit of using convolutional layers. What does this mean?
@@ -104,7 +104,7 @@ In lecture we talked about “sparsity of connections” as a benefit of using c
 
 - [ ] Each filter is connected to every channel in the previous layer.
 
-- [ ] Each activation in the next layer depends on only a small number of activations from the previous layer.
+- [x] Each activation in the next layer depends on only a small number of activations from the previous layer.
 
 - [ ] Each layer in a convolutional network is connected only to two other layers
 
