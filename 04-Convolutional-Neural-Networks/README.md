@@ -23,7 +23,7 @@ Learn to implement the foundational layers of CNNs (pooling, convolutions) and t
 -	Video · Pooling Layers
 -	Video · CNN Example
 -	Video · Why Convolutions?
--	**Quiz · The basics of ConvNets**
+-	[**Quiz · The basics of ConvNets**](https://github.com/ACPrime/DeepLearning/blob/master/04-Convolutional-Neural-Networks/week1/quiz.md)
 -	Other · Convolutional Model: step by step
 -	**Programming Assignment · Convolutional Model: step by step**
 -	Other · Convolutional Model: application
