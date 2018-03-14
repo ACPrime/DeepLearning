@@ -88,7 +88,7 @@ Because pooling layers do not have parameters, they do not affect the backpropag
 
 - [ ] False
 
-> Go to [this page](https://www.slideshare.net/kuwajima/cnnbp) for furthe information.
+> Go to [this page](https://www.slideshare.net/kuwajima/cnnbp) for further information.
 
 ## 9. Question 9
 In lecture we talked about “parameter sharing” as a benefit of using convolutional networks. Which of the following statements about parameter sharing in ConvNets are true? (**Check all that apply.**)
