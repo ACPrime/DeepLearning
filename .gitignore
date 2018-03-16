@@ -111,3 +111,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+/05-Sequence-Models
+/04-Convolutional-Neural-Networks/week2/
+/04-Convolutional-Neural-Networks/week3/
+/04-Convolutional-Neural-Networks/week4/
+
