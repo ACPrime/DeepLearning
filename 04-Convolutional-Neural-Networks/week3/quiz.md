@@ -6,7 +6,7 @@ You are building a 3-class object classification and localization algorithm. The
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/a9MQRr0QEee3NhLzohKsog_5db51fdc3a8e995bb9fbf1addd9fa35b_Screen-Shot-2017-10-29-at-6.18.43-PM.png?expiry=1522195200000&hmac=cw8HfFlphvWs5u-YwRWdp7dW9mXgxMjvRYr-Oz2Y4EM)
 
-- [ ] y=[1,0.3,0.7,0.3,0.3,0,1,0]
+- [x] y=[1,0.3,0.7,0.3,0.3,0,1,0]
 
 - [ ] y=[1,0.7,0.5,0.3,0.3,0,1,0]
 
@@ -24,7 +24,7 @@ Continuing from the previous problem, what should y be for the image below? Reme
 
 - [ ] y=[?,?,?,?,?,?,?,?]
 
-- [ ] y=[0,?,?,?,?,?,?,?]
+- [x] y=[0,?,?,?,?,?,?,?]
 
 - [ ] y=[0,?,?,?,?,0,0,0]
 
@@ -44,7 +44,7 @@ What is the most appropriate set of output units for your neural network?
 
 - [ ] Logistic unit, ![](https://latex.codecogs.com/gif.latex?b_%7Bx%7D) and ![](https://latex.codecogs.com/gif.latex?b_%7By%7D)
 
-- [ ] Logistic unit, ![](https://latex.codecogs.com/gif.latex?b_%7Bx%7D), ![](https://latex.codecogs.com/gif.latex?b_%7By%7D), ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D) (since ![](https://latex.codecogs.com/gif.latex?b_%7Bw%7D) = ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D))
+- [x] Logistic unit, ![](https://latex.codecogs.com/gif.latex?b_%7Bx%7D), ![](https://latex.codecogs.com/gif.latex?b_%7By%7D), ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D) (since ![](https://latex.codecogs.com/gif.latex?b_%7Bw%7D) = ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D))
 
 - [ ] Logistic unit, ![](https://latex.codecogs.com/gif.latex?b_%7Bx%7D), ![](https://latex.codecogs.com/gif.latex?b_%7By%7D), ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D), ![](https://latex.codecogs.com/gif.latex?b_%7Bw%7D)
 
@@ -54,7 +54,7 @@ If you build a neural network that inputs a picture of a person’s face and out
 
 - [ ] N
 
-- [ ] 2N
+- [x] 2N
 
 - [ ] 3N
 
@@ -66,7 +66,7 @@ When training one of the object detection systems described in lecture, you need
 
 - [ ] True
 
-- [ ] False
+- [x] False
 
 ## Question 6
 
@@ -74,13 +74,13 @@ Suppose you are applying a sliding windows classifier (non-convolutional impleme
 
 - [ ] True
 
-- [ ] False
+- [x] False
 
 ## Question 7
 
 In the YOLO algorithm, at training time, only one cell ---the one containing the center/midpoint of an object--- is responsible for detecting this object.
 
-- [ ] True
+- [x] True
 
 - [ ] False
 
@@ -92,7 +92,7 @@ What is the IoU between these two boxes? The upper-left box is 2x2, and the lowe
 
 - [ ] 1/6
 
-- [ ] 1/9
+- [x] 1/9
 
 - [ ] 1/10
 
@@ -108,7 +108,7 @@ Suppose you run non-max suppression on the predicted boxes above. The parameters
 
 - [ ] 4
 
-- [ ] 5
+- [x] 5
 
 - [ ] 6
 
@@ -118,7 +118,7 @@ Suppose you run non-max suppression on the predicted boxes above. The parameters
 
 Suppose you are using YOLO on a 19x19 grid, on a detection problem with 20 classes, and with 5 anchor boxes. During training, for each image you will need to construct an output volume y as the target value for the neural network; this corresponds to the last layer of the neural network. (y may include some “?”, or “don’t cares”). What is the dimension of this output volume?
 
-- [ ] 19x19x(5x25)
+- [x] 19x19x(5x25)
 
 - [ ] 19x19x(25x20)
 
