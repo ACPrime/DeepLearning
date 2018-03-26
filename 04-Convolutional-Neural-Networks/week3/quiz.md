@@ -42,11 +42,13 @@ What is the most appropriate set of output units for your neural network?
 
 - [ ] Logistic unit (for classifying if there is a soft-drink can in the image)
 
-- [ ] Logistic unit, ![](https://latex.codecogs.com/gif.latex?b_%7Bx%7D) and ![](https://latex.codecogs.com/gif.latex?b_%7By%7D)
+- [x] Logistic unit, ![](https://latex.codecogs.com/gif.latex?b_%7Bx%7D) and ![](https://latex.codecogs.com/gif.latex?b_%7By%7D)
 
-- [x] Logistic unit, ![](https://latex.codecogs.com/gif.latex?b_%7Bx%7D), ![](https://latex.codecogs.com/gif.latex?b_%7By%7D), ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D) (since ![](https://latex.codecogs.com/gif.latex?b_%7Bw%7D) = ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D))
+- [ ] Logistic unit, ![](https://latex.codecogs.com/gif.latex?b_%7Bx%7D), ![](https://latex.codecogs.com/gif.latex?b_%7By%7D), ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D) (since ![](https://latex.codecogs.com/gif.latex?b_%7Bw%7D) = ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D))
 
 - [ ] Logistic unit, ![](https://latex.codecogs.com/gif.latex?b_%7Bx%7D), ![](https://latex.codecogs.com/gif.latex?b_%7By%7D), ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D), ![](https://latex.codecogs.com/gif.latex?b_%7Bw%7D)
+
+> Because the size of drinks has been given, we don't need to detect ![](https://latex.codecogs.com/gif.latex?b_%7Bw%7D) and ![](https://latex.codecogs.com/gif.latex?b_%7Bh%7D)).
 
 ## Question 4
 
