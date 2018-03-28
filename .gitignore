@@ -115,7 +115,7 @@ ENV/
 #Those I haven't finished
 
 /05-Sequence-Models
-/04-Convolutional-Neural-Networks/week4/
+/04-Convolutional-Neural-Networks/week4/Programming-Assignments/
 
 # Too large file (almost data files)
 ResNet50.h5
