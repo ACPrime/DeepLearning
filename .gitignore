@@ -112,8 +112,17 @@ ENV/
 # mypy
 .mypy_cache/
 
+#Those I haven't finished
+
 /05-Sequence-Models
-/04-Convolutional-Neural-Networks/week3/Programming-Assignments/
 /04-Convolutional-Neural-Networks/week4/
 
+# Too large file (almost data files)
 ResNet50.h5
+yolo.h5
+pred_video.mp4
+pred_video_compressed2.mp4
+prediction_video_compressed.mp4
+road_video.mp4
+road_video_compressed.mp4
+road_video_compressed2.mp4
