@@ -25,9 +25,9 @@ Learn to implement the foundational layers of CNNs (pooling, convolutions) and t
 -	Video · Why Convolutions?
 -	[**Quiz · The basics of ConvNets**](https://github.com/ACPrime/DeepLearning/blob/master/04-Convolutional-Neural-Networks/week1/quiz.md)
 -	Other · Convolutional Model: step by step
--	**Programming Assignment · Convolutional Model: step by step**
+-	[**Programming Assignment · Convolutional Model: step by step**](https://github.com/ACPrime/DeepLearning/blob/master/04-Convolutional-Neural-Networks/week1/Programming-Assignments/Convolution_model_Application_v1_Answer.ipynb)
 -	Other · Convolutional Model: application
--	**Programming Assignment · Convolutional model: application**
+-	[**Programming Assignment · Convolutional model: application**](https://github.com/ACPrime/DeepLearning/blob/master/04-Convolutional-Neural-Networks/week1/Programming-Assignments/Convolution_model_Step_by_Step_v2_Answer.ipynb)
 
 ## WEEK 2 Deep convolutional models: case studies
 Learn about the practical tricks and methods used in deep CNNs straight from the research papers.
@@ -43,7 +43,7 @@ Learn about the practical tricks and methods used in deep CNNs straight from the
 -	Video · Data Augmentation
 -	Video · State of Computer Vision
 -	**Quiz · Deep convolutional models**
--	**Other · Keras Tutorial - The Happy House (not graded)**
+-	[**Other · Keras Tutorial - The Happy House (not graded)**](https://github.com/ACPrime/DeepLearning/blob/master/04-Convolutional-Neural-Networks/week2/Programming-Assignments/Keras%20Tutorial/Keras_Tutorial_Happy_House_v2_answer.ipynb)
 -	Other · Residual Networks
 -	**Programming Assignment · Residual Networks**
 
