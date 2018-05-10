@@ -5,7 +5,7 @@ What do you think applying this filter to a grayscale image will do?
 
 ![](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bbmatrix%7D%200%26%201%20%26%20-1%20%26%200%5C%5C%201%26%203%20%26%20-3%20%26%20-1%5C%5C%201%26%203%20%26%20-3%20%26%20-1%5C%5C%200%26%201%20%26%20-1%20%26%200%20%5Cend%7Bbmatrix%7D)
 
-- [x] Detect 45 degree edges
+- [ ] Detect 45 degree edges
 
 - [x] Detect vertical edges
 
@@ -93,13 +93,13 @@ Because pooling layers do not have parameters, they do not affect the backpropag
 ## 9. Question 9
 In lecture we talked about “parameter sharing” as a benefit of using convolutional networks. Which of the following statements about parameter sharing in ConvNets are true? (**Check all that apply.**)
 
-- [ ] It reduces the total number of parameters, thus reducing overfitting.
+- [x] It reduces the total number of parameters, thus reducing overfitting.
 
 - [x] It allows a feature detector to be used in multiple locations throughout the whole input image/input volume.
 
 - [ ] It allows parameters learned for one task to be shared even for a different task (transfer learning).
 
-- [x] It allows gradient descent to set many of the parameters to zero, thus making the connections sparse.
+- [ ] It allows gradient descent to set many of the parameters to zero, thus making the connections sparse.
 
 ## 10. Question 10
 In lecture we talked about “sparsity of connections” as a benefit of using convolutional layers. What does this mean?
